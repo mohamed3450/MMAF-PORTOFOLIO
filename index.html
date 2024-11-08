@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=library_books" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=library_books" />
+  <title>Document</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2 class="logo-h2">M</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+<section class="hero">
+<div class="text">
+  <p>Welcome to My Website</p>
+    <p>I am Mohamed Mostafa Front end developar</p>
+</div>
+<div class="hero-btn">
+<a href="#">Learn More</a>
+</div>
+<div class="img-skills">
+    <img src="html.png" alt="" srcset="">
+    <img src="css.png" alt="" srcset="">
+    <img src="jss.png" alt="" srcset="">
+
+</div>
+</section>
+<section class="about-us">
+    <div class="title">
+     <h1>ABOUT US</h1>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <h2>ABOUT US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ligula ac velit laoreet tincidunt. Nulla facilisi</p>
+        </div>
+        <div class="card">
+            <h2>OUR HISTORY</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ligula ac velit laoreet tincidunt. Nulla facilisi</p>
+        </div>
+    </div>
+</section>
+
+<section class="my-projects">
+    <div class="title">
+        <h1>MY PROJECTS</h1>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <h2>PROJECT 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ligula ac velit laoreet tincidunt. Nulla facilisi</p>
+            <a href="">discover</a>
+        </div>
+        <div class="card">
+            <h2>PROJECT 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ligula ac velit laoreet tincidunt. Nulla facilisi</p>
+            <a href="">discover</a>
+        </div>
+        <div class="card">
+            <h2>PROJECT 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ligula ac velit laoreet tincidunt. Nulla facilisi</p>
+            <a href="">discover</a>
+        </div>
+    </div>
+</section>
+    <section class="skills-section">
+        <h1>My Skills</h1>
+        <div class="skill-container">
+            <div class="skill" id="html">
+                <div class="circle">
+                    <span class="percentage">90%</span>
+                    <span class="skill-name">HTML</span>
+                </div>
+            </div>
+            <div class="skill" id="css">
+                <div class="circle">
+                    <span class="percentage">85%</span>
+                    <span class="skill-name">CSS</span>
+                </div>
+            </div>
+            <div class="skill" id="js">
+                <div class="circle">
+                    <span class="percentage">75%</span>
+                    <span class="skill-name">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="contact">
+    <div class="title">
+        <h1>CONTACT US</h1>
+    </div>
+    <div class="contact-form">
+        <form action="">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
+<script>function setSkillPercentage(skillId, percentage) {
+    const circle = document.getElementById(skillId).querySelector('.circle');
+    circle.style.setProperty('--percentage', `${percentage}%`);
+    const percentageElement = document.getElementById(skillId).querySelector('.percentage');
+    let currentPercentage = 0;
+    const interval = setInterval(() => {
+        if (currentPercentage >= percentage) {
+            clearInterval(interval);
+        } else {
+            currentPercentage++;
+            percentageElement.textContent = `${currentPercentage}%`;
+        }
+    }, 10);
+}
+
+window.onload = function() {
+    setSkillPercentage('html', 90);
+    setSkillPercentage('css', 85);
+    setSkillPercentage('js', 75);
+};
+</script>
+</body>
+</html>

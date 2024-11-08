@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body,html{
+    overflow-x: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    background-color: #001136;
+}
+.header{
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: rgb(0, 15, 63);
+backdrop-filter: 100px;
+color: aqua;
+height: 50px;
+display: flex;
+justify-content: space-between;
+}
+.logo{
+    margin: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.7), 0 0 30px rgba(0, 0, 255, 0.5);
+}
+.logo-h2{
+    font-size: 35px;
+}
+.nav-links {
+    margin: 10px;
+    padding: 10px;
+}
+.nav-links a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover{
+    color: aqua;
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.7), 0 0 30px rgba(0, 0, 255, 0.5);
+transition: 1.5s;
+}
+.hero{
+display: flex;
+    position: relative;
+    background-image: url(MO\ \(2\).png);
+    width: 100%;
+   
+    background: cover;
+    height: 1100px;
+    align-items: center;
+    text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+justify-content: center;
+}
+.text{
+    padding: 0;
+    margin: 0%;
+    font-size: 32px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    text-shadow: 0 0 100px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.7), 0 0 30px rgb(0, 140, 255);
+}
+.hero-btn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 21, 92, 0.384);
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+h1 {
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    color: #003985;
+    }
+    h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Adjust based on your spacing */
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #008cff;
+    animation: expand 1.5s infinite alternate;
+    }
+    @keyframes expand {
+    0% { width: 0; }
+    100% { width: 15%; }
+    }
+    .about-us{
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+    }
+    .cards{
+        text-align: center;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+
+    }
+    .card{
+      background-color: #04003f;
+      border: #003985 1px solid;
+      margin: 20px;
+      height: 350px;
+      border-radius: 20px;
+      padding: 20px;
+      color: aqua;
+    }
+    .card p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin: 20px;
+    
+    }
+.card h1{
+    font-family:lans;
+}
+    .card a{
+        margin: 10px;
+        text-decoration: none;
+        color: #0099ff;
+        background: #003985;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .card:hover{
+        color: rgb(255, 255, 255);
+        transition: 1s;
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.7), 0 0 20px rgba(0, 195, 255, 0.7), 0 0 30px rgba(0, 225, 255, 0.5);
+    }    
+    .skills-section { text-align: center; padding: 20px; } .skills-section h1 { font-size: 2.5em; margin: 20px; } .skill-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; } .skill { display: flex; flex-direction: column; align-items: center; } .circle { width: 150px; height: 150px; border-radius: 50%; background: conic-gradient(#4d5bf9 var(--percentage), #ccc var(--percentage)); display: flex; justify-content: center; align-items: center; margin: 50px; position: relative; transition: background 1.5s ease-in-out; } .circle::after { content: ""; width: 130px; height: 130px; background: white; border-radius: 50%; display: block; position: absolute; } .percentage { position: absolute; font-size: 1.5em; font-weight: bold; color: #4d5bf9; z-index: 1; } .skill-name { position: absolute; bottom: 30px; font-size: 1em;  z-index: 1; } /* Responsive Design */ @media (max-width: 768px) { .skill-container { flex-direction: column; align-items: center; } .circle { width: 120px; height: 120px; } .circle::after { width: 100px; height: 100px; } }                                                                                                
+                                                                                                                                                                              
+                      
+                  
